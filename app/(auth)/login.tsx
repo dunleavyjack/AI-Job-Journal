@@ -1,9 +1,10 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
+import { LoginForm } from "@/features/auth/components/LoginForm/LoginForm";
 
 export default function LoginScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Login</Text>
+      <LoginForm />
     </View>
   );
 }
@@ -11,11 +12,7 @@ export default function LoginScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#25292e",
     justifyContent: "center",
     alignItems: "center",
-  },
-  text: {
-    color: "#fff",
   },
 });
